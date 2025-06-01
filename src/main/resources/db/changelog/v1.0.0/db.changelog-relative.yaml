@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01062025_create_tables.sql
+      author: Dmitry Miroshnikov
+      comment: "Create tables"
+      changes:
+        - sqlFile:
+            path: 01062025_create_tables.sql
+            relativeToChangelogFile: true
+  - changeSet:
+      id: 01062025_insert_roles.sql
+      author: Dmitry Miroshnikov
+      comment: "Insert account roles"
+      changes:
+        - sqlFile:
+            path: 01062025_insert_roles.sql
+            relativeToChangelogFile: true
