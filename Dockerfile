@@ -22,6 +22,6 @@ WORKDIR /${WORK_DIR}
 
 COPY --from=build /${WORK_DIR}/${JAR_FILE} account.jar
 
-EXPOSE 8761
+EXPOSE 8010
 
 ENTRYPOINT ["java", "-jar", "account.jar"]
